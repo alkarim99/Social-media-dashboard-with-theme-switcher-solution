@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body{
+  height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 3vw 0;
   font-family: 'Inter', sans-serif;
   color: hsl(0, 0%, 100%);
   background-color: hsl(230, 17%, 14%);
+  display: grid;
+  justify-items: center;
+  align-items: center;
   transition: .4s;
-}
-
-main{
-  padding: 30px 100px;
 }
 
 .stat{
@@ -145,6 +145,7 @@ input:checked + .slider:before {
   grid-template-columns: repeat(4, 260px);
   grid-template-rows: auto;
   grid-template-areas: "fb tw ig yt";
+  column-gap: 5vw;
   justify-content: space-between;
   align-items: center;
 }
@@ -215,7 +216,7 @@ input:checked + .slider:before {
   grid-template-areas: 
     "fb-page fb-likes ig-likes ig-profile"
     "tw-retweets tw-likes yt-likes yt-total";
-  row-gap: 20px;
+  row-gap: 5vh;
   justify-content: space-between;
   align-items: center;
 }
